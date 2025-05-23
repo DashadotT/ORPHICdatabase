@@ -38,7 +38,7 @@ $items = $purchased->fetchAll(PDO::FETCH_ASSOC);
         <div class="navbar-links">
             <div>
                 <a href="Home.php">Home</a>
-                <a href="Home.html#product-list">Today's Deals</a>
+                <a href="Home.php#product-list">Today's Deals</a>
                 <a href="cart.php">Cart</a>
                 <a href="purchased.php">Purchased</a>
             </div>
@@ -112,8 +112,9 @@ window.onclick = function(event) {
     }
 }
 function logout() {
-    alert("Logout functionality not implemented yet.");
-}
+        // Optionally do AJAX logout here or just redirect
+        window.location.href = "login.php";
+    }
 </script>
 
 </body>

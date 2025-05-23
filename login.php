@@ -102,7 +102,17 @@ if(session_status() == PHP_SESSION_NONE) {
               
               <div class="overlap-3">
                 <input type="password" name="password" id="password" class="rectangle-3" placeholder="Password" required />
-                <img class="image-4" src="https://c.animaapp.com/mabuwas1L7eP4e/img/image-1.png" />
+                <img class="image-4" src="https://c.animaapp.com/mabuwas1L7eP4e/img/image-1.png" style="cursor:pointer;" onclick="togglePasswordVisibility()" title="Show/Hide Password" />
+                <script>
+                  function togglePasswordVisibility() {
+                  var pwd = document.getElementById('password');
+                  if (pwd.type === 'password') {
+                    pwd.type = 'text';
+                  } else {
+                    pwd.type = 'password';
+                  }
+                  }
+                </script>
               </div>
 
               <button type="submit" class="overlap-4">

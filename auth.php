@@ -1,23 +1,29 @@
 <?php
 session_start();
-require_once 'connection.php'; // contains $pdo (use mysqli if different)
+require_once 'connection.php'; // assumes $pdo (PDO is used here)
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $username = $_POST['username'];
     $password = $_POST['password'];
 
-    // Prepared statement to avoid SQL injection
+    // Fetch user info from DB
     $stmt = $pdo->prepare("SELECT * FROM tbl_user WHERE user_name = ?");
     $stmt->execute([$username]);
     $user = $stmt->fetch();
 
-    if ($user && $password == $user['user_password']) { // You can use password_verify() if password is hashed
-        $_SESSION['username'] = $user['user_name']; // Create session
-        $_SESSION['user_id'] = $user['user_id'];    // Optional: store ID
-        header("Location: Home.php"); // Redirect to a logged-in page
+    if ($user && $password === $user['user_password']) { // use password_verify() for hashed passwords
+        $_SESSION['username'] = $user['user_name'];
+        $_SESSION['user_id'] = $user['user_id'];
+        $_SESSION['is_admin'] = $user['is_admin']; // Store admin status
+
+        if ($user['is_admin'] == 1) {
+            header("Location: admin_page.php"); // Redirect admin
+        } else {
+            header("Location: Home.php"); // Redirect normal user
+        }
         exit();
     } else {
-        echo "Invalid username or password.";
+        echo "<script>alert('Invalid username or password'); window.location.href='login.php';</script>";
     }
 }
 ?>

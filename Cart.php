@@ -95,7 +95,7 @@ $total = 0;
             <div class="navbar-links">
                 <div>
                     <a href="Home.php">Home</a>
-                    <a href="Home.html#product-list">Today's Deals</a>
+                    <a href="Home.php#product-list">Today's Deals</a>
                     <a href="cart.php">Cart</a>
                     <a href="purchased.php">Purchased</a>
                 </div>

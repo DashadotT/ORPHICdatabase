@@ -1,0 +1,72 @@
+[
+  {
+    "id": "product1",
+    "title": "YOWU Cat Ear Headphones 4GS - RGB Gaming Headset",
+    "price": 600,
+    "rating": "★★★★☆",
+    "image": "https://c.animaapp.com/maksq8u46pByZ6/img/image1.png"
+  },
+  {
+    "id": "product2",
+    "title": "Kingston Fury Beast RGB",
+    "price": 1500,
+    "rating": "★★★★★",
+    "image": "https://c.animaapp.com/maksq8u46pByZ6/img/item1-1.png"
+  },
+  {
+    "id": "product3",
+    "title": "Logitech G502 X Plus Wireless Gaming Mouse",
+    "price": 3000,
+    "rating": "★★★★☆",
+    "image": "https://c.animaapp.com/maksq8u46pByZ6/img/item1-2.png"
+  },
+  {
+    "id": "product4",
+    "title": "GOWENIC DDR4 Motherboard",
+    "price": 3000,
+    "rating": "★★★★☆",
+    "image": "https://c.animaapp.com/maixeniyECsT9y/img/item1-2.png"
+  },
+  {
+    "id": "product5",
+    "title": "DarkFlash Full-Tower ATX Gaming PC Case",
+    "price": 3000,
+    "rating": "★★★★☆",
+    "image": "https://c.animaapp.com/maixeniyECsT9y/img/image-28.png"
+  },
+  {
+    "id": "product6",
+    "title": "Dual SATA ARGB Fan Controller",
+    "price": 3000,
+    "rating": "★★★★☆",
+    "image": "https://c.animaapp.com/maixeniyECsT9y/img/image-24.png"
+  },
+  {
+    "id": "product7",
+    "title": "Redragon M801 Wireless Gaming Mouse",
+    "price": 3000,
+    "rating": "★★★★☆",
+    "image": "https://c.animaapp.com/maixeniyECsT9y/img/image-21.png"
+  },
+  {
+    "id": "product8",
+    "title": "AULA F99 Pro Wireless Mechanical Keyboard",
+    "price": 3000,
+    "rating": "★★★★☆",
+    "image": "https://c.animaapp.com/maixeniyECsT9y/img/image-19.png"
+  },
+  {
+    "id": "product9",
+    "title": "MUSETEX ATX PC Case",
+    "price": 3000,
+    "rating": "★★★★☆",
+    "image": "https://c.animaapp.com/maixeniyECsT9y/img/image-26.png"
+  },
+  {
+    "id": "product10",
+    "title": "KeiBn Gaming Laptop Cooler Pad",
+    "price": 3000,
+    "rating": "★★★★☆",
+    "image": "https://c.animaapp.com/maixeniyECsT9y/img/image-22.png"
+  }
+]

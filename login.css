@@ -1,0 +1,690 @@
+.log-inpage {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .log-inpage .div {
+    background-color: #ffffff;
+    width: 1440px;
+    height: 1024px;
+    position: relative;
+  }
+  
+  .log-inpage .overlap {
+    position: absolute;
+    width: 1440px;
+    height: 75px;
+    top: 949px;
+    left: 0;
+    background-color: #ebeef4;
+  }
+  
+  .log-inpage .text-wrapper {
+    position: absolute;
+    top: 27px;
+    left: 202px;
+    font-family: "Montserrat", Helvetica;
+    font-weight: 500;
+    color: #1e1e1e;
+    font-size: 16px;
+    text-align: justify;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .log-inpage .p {
+    position: absolute;
+    top: 27px;
+    left: 974px;
+    font-family: "Montserrat", Helvetica;
+    font-weight: 500;
+    color: #1e1e1e;
+    font-size: 16px;
+    text-align: justify;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .log-inpage .group {
+    position: absolute;
+    width: 152px;
+    height: 31px;
+    top: 23px;
+    left: 323px;
+  }
+  
+  .log-inpage .image {
+    position: absolute;
+    width: 31px;
+    height: 31px;
+    top: 0;
+    left: 121px;
+    object-fit: cover;
+  }
+  
+  .log-inpage .img {
+    position: absolute;
+    width: 31px;
+    height: 31px;
+    top: 0;
+    left: 79px;
+    object-fit: cover;
+  }
+  
+  .log-inpage .image-2 {
+    position: absolute;
+    width: 31px;
+    height: 31px;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+  }
+  
+  .log-inpage .image-3 {
+    position: absolute;
+    width: 31px;
+    height: 31px;
+    top: 0;
+    left: 40px;
+    object-fit: cover;
+  }
+  
+  .log-inpage .overlap-group {
+    position: absolute;
+    width: 1440px;
+    height: 577px;
+    top: 0;
+    left: 0;
+  }
+  
+  .log-inpage .login-BG {
+    position: absolute;
+    width: 1440px;
+    height: 499px;
+    top: 71px;
+    left: 0;
+    background: radial-gradient(
+      50% 50% at 50% 50%,
+      rgba(35, 90, 179, 1) 0%,
+      rgba(5, 30, 71, 1) 100%
+    );
+  }
+  
+  .log-inpage .header {
+    position: absolute;
+    width: 1440px;
+    height: 75px;
+    top: 0;
+    left: 0;
+    background-color: #051e47;
+    box-shadow: 0px 4px 20px #00000080;
+  }
+  
+  .log-inpage .logo {
+    top: 13px;
+    left: 48px;
+    position: absolute;
+    width: 164px;
+    height: 50px;
+    object-fit: cover;
+  }
+  
+  .log-inpage .text-wrapper-2 {
+    position: absolute;
+    height: 24px;
+    top: 25px;
+    left: 1166px;
+    font-family: "Exo 2", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 16px;
+    letter-spacing: 0.50px;
+    line-height: 24px;
+    white-space: nowrap;
+  }
+  
+  .log-inpage .mask-group {
+    position: absolute;
+    width: 1440px;
+    height: 499px;
+    top: 78px;
+    left: 0;
+  }
+  
+  .log-inpage .rectangle {
+    position: absolute;
+    width: 356px;
+    height: 401px;
+    top: 127px;
+    left: 378px;
+    background-color: #051e47;
+    border-radius: 15px;
+  }
+  
+  .log-inpage .mask-group-2 {
+    position: absolute;
+    width: 364px;
+    height: 409px;
+    top: 127px;
+    left: 374px;
+  }
+  
+  .log-inpage .login-box {
+    position: absolute;
+    width: 384px;
+    height: 401px;
+    top: 124px;
+    left: 695px;
+  }
+  
+  .log-inpage .overlap-group-2 {
+    position: relative;
+    width: 368px;
+    height: 401px;
+    background-color: #ffffff;
+    border-radius: 15px;
+  }
+  
+  .log-inpage .overlap-2 {
+    position: absolute;
+    width: 289px;
+    height: 44px;
+    top: 89px;
+    left: 37px;
+    border-radius: 5px;
+  }
+  
+  .log-inpage .rectangle-2 {
+    position: absolute;
+    width: 289px;
+    height: 44px;
+    top: 0;
+    left: 0;
+    border-radius: 5px;
+    border: 1px solid;
+    border-color: #010d1c;
+    /* transform: rotate(180deg); */
+  }
+  
+  .log-inpage .text-wrapper-3 {
+    position: absolute;
+    top: 12px;
+    left: 13px;
+    font-family: "Montserrat", Helvetica;
+    font-weight: 500;
+    color: #1e1e1e66;
+    font-size: 15px;
+    text-align: justify;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .log-inpage .overlap-3 {
+    position: absolute;
+    width: 289px;
+    height: 41px;
+    top: 157px;
+    left: 37px;
+    border-radius: 5px;
+  }
+  
+  .log-inpage .rectangle-3 {
+    position: absolute;
+    width: 289px;
+    height: 41px;
+    top: 0;
+    left: 0;
+    border-radius: 5px;
+    border: 1px solid;
+    border-color: #010d1c;
+    /* transform: rotate(180deg); */
+  }
+  
+  .log-inpage .text-wrapper-4 {
+    position: absolute;
+    top: 11px;
+    left: 13px;
+    font-family: "Montserrat", Helvetica;
+    font-weight: 500;
+    color: #1e1e1e66;
+    font-size: 15px;
+    text-align: justify;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .log-inpage .image-4 {
+    position: absolute;
+    width: 19px;
+    height: 19px;
+    top: 12px;
+    left: 257px;
+    object-fit: cover;
+  }
+  
+  .log-inpage .overlap-4 {
+    position: absolute;
+    width: 287px;
+    height: 39px;
+    top: 223px;
+    left: 38px;
+    border-radius: 5px;
+  }
+  
+  .log-inpage .rectangle-4 {
+    position: absolute;
+    width: 287px;
+    height: 39px;
+    top: 0;
+    left: 0;
+    background-color: #42678e;
+    border-radius: 5px;
+    transform: rotate(180deg);
+  }
+  
+  .log-inpage .text-wrapper-5 {
+  position: absolute;
+  top: 10px;
+  left: 117px;
+  font-family: "Montserrat", Helvetica, sans-serif;
+  font-weight: 500;
+  color: #ffffff;
+  font-size: 16px;
+  text-align: center; /* usually better than justify for single words */
+  letter-spacing: 0.5px; /* optional for better spacing */
+  line-height: 1.5;
+  cursor: pointer; /* make it feel clickable */
+  z-index: 10; /* ensures it’s on top */
+}
+
+  .log-inpage .overlap-5 {
+    position: absolute;
+    width: 119px;
+    height: 41px;
+    top: 303px;
+    left: 37px;
+    border-radius: 5px;
+  }
+  
+  .log-inpage .rectangle-5 {
+    position: absolute;
+    width: 119px;
+    height: 41px;
+    top: 0;
+    left: 0;
+    border-radius: 5px;
+    border: 1px solid;
+    border-color: #010d1c80;
+    transform: rotate(180deg);
+  }
+  
+  .log-inpage .text-wrapper-6 {
+    position: absolute;
+    top: 13px;
+    left: 39px;
+    font-family: "Montserrat", Helvetica;
+    font-weight: 500;
+    color: #010d1c;
+    font-size: 12px;
+    text-align: justify;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .log-inpage .overlap-6 {
+    position: absolute;
+    width: 119px;
+    height: 41px;
+    top: 303px;
+    left: 207px;
+    border-radius: 5px;
+  }
+  
+  .log-inpage .text-wrapper-7 {
+    position: absolute;
+    top: 13px;
+    left: 47px;
+    font-family: "Montserrat", Helvetica;
+    font-weight: 500;
+    color: #010d1c;
+    font-size: 12px;
+    text-align: justify;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .log-inpage .text-wrapper-8 {
+    position: absolute;
+    top: 32px;
+    left: 38px;
+    font-family: "Inter", Helvetica;
+    font-weight: 400;
+    color: #010d1c;
+    font-size: 24px;
+    text-align: justify;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .log-inpage .text-wrapper-9 {
+    position: absolute;
+    top: 271px;
+    left: 38px;
+    font-family: "Montserrat", Helvetica;
+    font-weight: 500;
+    color: #051e47;
+    font-size: 12px;
+    text-align: justify;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .log-inpage .don-t-have-account {
+    position: absolute;
+    top: 361px;
+    left: 90px;
+    font-family: "Montserrat", Helvetica;
+    font-weight: 500;
+    color: transparent;
+    font-size: 12px;
+    text-align: justify;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .log-inpage .span {
+    color: #010d1c;
+  }
+  
+  .log-inpage .text-wrapper-10 {
+    color: #010d1c;
+    text-decoration: underline;
+  }
+  
+  .log-inpage .image-5 {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 440px;
+    left: 752px;
+    object-fit: cover;
+  }
+  
+  .log-inpage .image-6 {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 440px;
+    left: 930px;
+    object-fit: cover;
+  }
+  
+  .log-inpage .logo-2 {
+    top: 300px;
+    left: 441px;
+    position: absolute;
+    width: 164px;
+    height: 50px;
+    object-fit: cover;
+  }
+  
+  .log-inpage .mask-group-3 {
+    position: absolute;
+    width: 650px;
+    height: 499px;
+    top: 78px;
+    left: 0;
+  }
+  
+  .log-inpage .help-centre-payment {
+    position: absolute;
+    top: 643px;
+    left: 1122px;
+    font-family: "Montserrat", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 12px;
+    letter-spacing: 0;
+    line-height: 24px;
+  }
+  
+  .log-inpage .overlap-7 {
+    position: absolute;
+    width: 486px;
+    height: 65px;
+    top: 643px;
+    left: 490px;
+  }
+  
+  .log-inpage .group-2 {
+    position: absolute;
+    width: 486px;
+    height: 65px;
+    top: 0;
+    left: 0;
+    box-shadow: 0px 1px 4px #00000040;
+  }
+  
+  .log-inpage .flash-express-wrapper {
+    position: absolute;
+    width: 64px;
+    height: 27px;
+    top: 0;
+    left: 348px;
+    background-color: #ffffff;
+    border-radius: 7px;
+  }
+  
+  .log-inpage .flash-express {
+    position: absolute;
+    width: 54px;
+    height: 22px;
+    top: 3px;
+    left: 5px;
+    object-fit: cover;
+  }
+  
+  .log-inpage .rectangle-6 {
+    position: absolute;
+    width: 64px;
+    height: 27px;
+    top: 38px;
+    left: 348px;
+    background-color: #ffffff;
+    border-radius: 7px;
+  }
+  
+  .log-inpage .rectangle-7 {
+    position: absolute;
+    width: 64px;
+    height: 27px;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+    border-radius: 7px;
+  }
+  
+  .log-inpage .rectangle-8 {
+    position: absolute;
+    width: 64px;
+    height: 27px;
+    top: 38px;
+    left: 0;
+    background-color: #ffffff;
+    border-radius: 7px;
+  }
+  
+  .log-inpage .rectangle-9 {
+    position: absolute;
+    width: 64px;
+    height: 27px;
+    top: 38px;
+    left: 84px;
+    background-color: #ffffff;
+    border-radius: 7px;
+  }
+  
+  .log-inpage .rectangle-10 {
+    position: absolute;
+    width: 64px;
+    height: 27px;
+    top: 0;
+    left: 84px;
+    background-color: #ffffff;
+    border-radius: 7px;
+  }
+  
+  .log-inpage .rectangle-11 {
+    position: absolute;
+    width: 64px;
+    height: 27px;
+    top: 38px;
+    left: 422px;
+    background-color: #ffffff;
+    border-radius: 7px;
+  }
+  
+  .log-inpage .rectangle-12 {
+    position: absolute;
+    width: 64px;
+    height: 27px;
+    top: 0;
+    left: 422px;
+    background-color: #ffffff;
+    border-radius: 7px;
+  }
+  
+  .log-inpage .ninjavan-svg {
+    position: absolute;
+    width: 58px;
+    height: 16px;
+    top: 44px;
+    left: 351px;
+    object-fit: cover;
+  }
+  
+  .log-inpage .element-travel-logo {
+    position: absolute;
+    width: 52px;
+    height: 25px;
+    top: 38px;
+    left: 428px;
+    object-fit: cover;
+  }
+  
+  .log-inpage .element-j-t-express {
+    position: absolute;
+    width: 48px;
+    height: 10px;
+    top: 9px;
+    left: 430px;
+    object-fit: cover;
+  }
+  
+  .log-inpage .gcash-logo {
+    position: absolute;
+    width: 50px;
+    height: 28px;
+    top: 0;
+    left: 7px;
+    object-fit: cover;
+  }
+  
+  .log-inpage .image-7 {
+    position: absolute;
+    width: 58px;
+    height: 21px;
+    top: 4px;
+    left: 86px;
+    object-fit: cover;
+  }
+  
+  .log-inpage .image-8 {
+    position: absolute;
+    width: 50px;
+    height: 22px;
+    top: 40px;
+    left: 5px;
+    object-fit: cover;
+  }
+  
+  .log-inpage .image-9 {
+    position: absolute;
+    width: 52px;
+    height: 14px;
+    top: 44px;
+    left: 89px;
+  }
+  
+  .log-inpage .text-wrapper-11 {
+    position: absolute;
+    top: 618px;
+    left: 838px;
+    font-family: "Montserrat", Helvetica;
+    font-weight: 500;
+    color: #1e1e1e;
+    font-size: 16px;
+    text-align: justify;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .log-inpage .text-wrapper-12 {
+    position: absolute;
+    top: 618px;
+    left: 490px;
+    font-family: "Montserrat", Helvetica;
+    font-weight: 500;
+    color: #1e1e1e;
+    font-size: 16px;
+    text-align: justify;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .log-inpage .text-wrapper-13 {
+    position: absolute;
+    top: 618px;
+    left: 1122px;
+    font-family: "Montserrat", Helvetica;
+    font-weight: 500;
+    color: #1e1e1e;
+    font-size: 16px;
+    text-align: justify;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .log-inpage .text-wrapper-14 {
+    position: absolute;
+    top: 618px;
+    left: 130px;
+    font-family: "Montserrat", Helvetica;
+    font-weight: 500;
+    color: #1e1e1e;
+    font-size: 16px;
+    text-align: justify;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .log-inpage .text-wrapper-15 {
+    position: absolute;
+    width: 224px;
+    top: 648px;
+    left: 130px;
+    font-family: "Montserrat", Helvetica;
+    font-weight: 400;
+    color: #1e1e1e;
+    font-size: 12px;
+    text-align: justify;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+
+  

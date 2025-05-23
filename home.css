@@ -1,0 +1,295 @@
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+
+        nav {
+            width: 100%;
+            background-color: #141d4e;
+        }
+
+        .navbar {
+            align-items: center;
+            display: flex;
+            justify-content: space-between;
+            margin: 0 15rem;
+        }
+
+        nav img {   
+            max-height: 60px;
+            margin: 0 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0 15px;
+            font-weight: bold;
+        }
+
+        .navbar-links {
+            display: flex;
+            gap: 5rem;
+        }
+
+        .searchandcart {
+            margin: 0 15rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 2rem 15rem;
+            height: 400px;
+            position: relative;
+            color: white;
+            background:
+                linear-gradient(to bottom, #0d1d4bcc, #ffffffcc),
+                url('photos/DesignImage.png') no-repeat center center;
+            background-size: cover;
+        }
+
+
+        .search-bar {
+            flex: 1;
+            margin-right: 2rem;
+        }
+
+        .search-bar input[type="text"] {
+            width: 100%;
+            height: 50px;
+            padding: 0 20px;
+            border: none;
+            border-radius: 25px;
+            font-size: 1em;
+        }
+
+        .cart-icon {
+            font-size: 26px;
+            cursor: pointer;
+            color: black;
+            background-color: yellow;
+            border-radius: 50%;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 50px;
+            height: 50px;
+            z-index: 2;
+        }
+
+        .slogan {
+            position: absolute;
+            bottom: 40px;
+            left: 15rem;
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: white;
+            line-height: 1.2;
+            text-shadow: 0 2px 1px rgba(0, 0, 0, 100);
+        }
+
+        .slogan .orange {
+            color: #ff8c00;
+            /* Bright gamer-style orange */
+        }
+
+        section {
+            margin: 0 15rem;
+            padding-left: 20px;
+        }
+
+        .deals {
+            color: #141d4e;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+
+        main {
+            margin: 0 15rem;
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 20px;
+        }
+
+        .product-card {
+            width: 250px;
+            border: 1px solid #ccc;
+            border-radius: 20px;
+            padding: 10px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+        }
+
+        .product-image {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 15px;
+            background-color: #e2e2e2;
+        }
+
+        .product-title {
+            font-weight: bold;
+            height: 50px;
+            margin-top: 10px;
+        }
+
+        .product-price {
+            color: #007bff;
+            font-weight: bold;
+            margin-top: 5px;
+        }
+
+        .product-rating {
+            margin-top: 5px;
+        }
+
+        .buy-button,
+        .add-to-cart-button {
+            background-color: #007bff;
+            color: white;
+            padding: 8px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+            margin-right: 5px;
+        }
+
+        .add-to-cart-button {
+            background-color: #28a745;
+        }
+
+        .orphic-footer {
+            background-color: #f9f9f9;
+            color: #333;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding-top: 40px;
+        }
+
+        .footer-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 0 60px 40px;
+        }
+
+        .footer-section {
+            flex: 1 1 220px;
+            margin: 15px;
+        }
+
+        .footer-section h3 {
+            font-size: 16px;
+            margin-bottom: 12px;
+            color: #222;
+        }
+
+        .footer-section p {
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        .footer-section ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-section ul li {
+            margin-bottom: 8px;
+        }
+
+        .footer-section ul li a {
+            color: #333;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .footer-section ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .footer-icons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .footer-icons img {
+            height: 25px;
+            max-width: 100px;
+        }
+
+        .footer-bottom {
+            background-color: #e9eef6;
+            padding: 20px 60px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            font-size: 14px;
+        }
+
+        .footer-bottom .social {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .footer-bottom .social span {
+            font-weight: 600;
+            margin-right: 5px;
+        }
+
+        .footer-bottom .social img {
+            height: 20px;
+            width: 20px;
+        }
+
+        #accountModal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+
+        #accountModalContent {
+            background-color: #fefefe;
+            margin: 15% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 300px;
+        }
+
+        #accountModal .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        #accountModal .close:hover,
+        #accountModal .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }

@@ -49,6 +49,7 @@ $items = $purchased->fetchAll(PDO::FETCH_ASSOC);
     </div>
 </nav>
 
+<!-- Purchased Items -->
 <div><br>
     <h2>Purchased Items</h2>
     <div class="cart-container" id="purchased-items">
@@ -83,38 +84,82 @@ $items = $purchased->fetchAll(PDO::FETCH_ASSOC);
     </div>
 </div>
 
-<!-- Account Modal (same as your cart.php or home.php) -->
-<div id="accountModal">
-  <div id="accountModalContent">
-    <span class="close" onclick="closeAccountModal()">&times;</span>
-    <h2>Your Account</h2>
-    <p><strong>Name:</strong> Joeroz</p>
-    <p><strong>Email:</strong> joerozvicariato@gmail.com</p>
-    <p><strong>Member Since:</strong> 2023-10-26</p>
-    <p><strong>Address:</strong> Lingion, Manolo Fortich Bukidnon</p>
-    <p><strong>Phone:</strong> 09123456789</p>
-    <button onclick="logout()">Log Out</button>
+<!-- Account Modal -->
+<div id="accountModal" style="display:none;">
+  <div id="accountModalContent" style="box-shadow: 0 8px 32px rgba(0,0,0,0.25); border: 1px solid #eee; background: #fff; margin: 10% auto; padding: 20px; width: 300px; border-radius: 8px; position: relative;">
+    <span class="close" onclick="closeAccountModal()" style="position: absolute; right: 10px; top: 10px; cursor: pointer; font-size: 24px; color: #ff5a36;">&times;</span>
+    <h2 style="text-align:center; color:#ff5a36; margin-bottom: 20px; font-weight:700;">Your Account</h2>
+    <form id="updateAccountForm" style="display: flex; flex-direction: column; gap: 15px;">
+      <label style="font-weight: 500; color: #333;">
+        Name:
+        <input type="text" id="accountName" name="name" required
+               style="width: 100%; padding: 8px 10px; border: 1px solid #ddd; border-radius: 5px; margin-top: 5px;" />
+      </label>
+      <label style="font-weight: 500; color: #333;">
+        Email:
+        <input type="email" id="accountEmail" name="email" required
+               style="width: 100%; padding: 8px 10px; border: 1px solid #ddd; border-radius: 5px; margin-top: 5px;" />
+      </label>
+      <div style="display: flex; gap: 10px; margin-top: 10px;">
+        <button type="submit" style="flex:1; background: #ff5a36; color: #fff; border: none; border-radius: 5px; padding: 10px 0; font-weight: 600; cursor: pointer; transition: background 0.2s;">Update</button>
+        <button type="button" onclick="logout()" style="flex:1; background: #222; color: #fff; border: none; border-radius: 5px; padding: 10px 0; font-weight: 600; cursor: pointer; transition: background 0.2s;">Log Out</button>
+      </div>
+    </form>
+    <div id="updateMsg" style="margin-top: 15px; text-align: center; color: #28a745; font-weight: 500;"></div>
   </div>
 </div>
 
-<!-- JS to open/close account modal -->
+<!-- JavaScript -->
 <script>
-const accountModal = document.getElementById('accountModal');
-document.getElementById('openAccountModal').onclick = function() {
-    accountModal.style.display = 'block';
+document.getElementById('openAccountModal').onclick = function(e) {
+    e.preventDefault();
+    fetch('getUserInfo.php')
+        .then(response => response.json())
+        .then(data => {
+            if (data.error) {
+                alert(data.error);
+            } else {
+                document.getElementById('accountName').value = data.name || '';
+                document.getElementById('accountEmail').value = data.email || '';
+                document.getElementById('accountModal').style.display = 'block';
+            }
+        })
+        .catch(error => {
+            console.error('Error fetching account info:', error);
+        });
 };
+
+document.getElementById('updateAccountForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    const name = document.getElementById('accountName').value;
+    const email = document.getElementById('accountEmail').value;
+
+    fetch('updateAccount.php', {
+        method: 'POST',
+        headers: {'Content-Type': 'application/x-www-form-urlencoded'},
+        body: 'name=' + encodeURIComponent(name) + '&email=' + encodeURIComponent(email)
+    })
+    .then(response => response.text())
+    .then(data => {
+    const msg = document.getElementById('updateMsg');
+    msg.textContent = data;
+
+    // Automatically hide message after 3 seconds
+    setTimeout(() => {
+        msg.textContent = '';
+    }, 3000);
+})
+
+    .catch(error => console.error('Update error:', error));
+});
+
 function closeAccountModal() {
-    accountModal.style.display = 'none';
+    document.getElementById('accountModal').style.display = 'none';
 }
-window.onclick = function(event) {
-    if (event.target == accountModal) {
-        accountModal.style.display = 'none';
-    }
-}
+
 function logout() {
-        // Optionally do AJAX logout here or just redirect
-        window.location.href = "login.php";
-    }
+    window.location.href = 'logout.php';
+}
 </script>
 
 </body>
